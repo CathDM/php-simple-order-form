@@ -21,8 +21,29 @@
     $num = 5;   
         echo $str; echo " ";
         echo $num;
-    
+    ?><br>
+   <!---boolean-->
+    <?php
+    $late = true;
+    if ($late) 
+    {
+        echo "true"; 
+    }
+    else "fals";
     ?>
+    <!---integer_//use_vardump-->
+    <?php
+    $negative = -3 ; //negative
+    $zero = 0 ; //can be null or fals (boolean)
+    $positive = 123; //pos dec
+    $zeroPos = 0132 ; //zero positive is used for octal value = 8number (0-7)value (83decimal)
+    $hex = 0xAB ; //0x pefix is used in hexidecimal values = 171 decimal (16diffrentsymbols)
+    $bin = 01010 ; //bin prifix used for binary values (decimal)
+    var_dump ($negative,$zero,$positive,$zeroPos,$hex,$bin);
+     ?>
+
+
+
    
    
 
@@ -34,7 +55,7 @@
     3.create a search loop to place products???
     4.form validation'your email has been send'
     //from here we do small exercises 
-    //Get-method ===== -->
+    //Get-method ===== --> 
      
 <section class="container">
     <h4 class="center">Order food in restaurant "the Personal Ham Processors"</h4>
