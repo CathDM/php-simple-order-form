@@ -16,7 +16,7 @@
     <?php print "Hello print!"; ?><br>
     <?php printf ('Hi, printfunction!'); ?><br>
     <?php echo "Hi, I am learning php from scratch you mofo!" ?><br>
-    <?php $str = "i will be back by "; ?>
+    <?php $str = "i will be back by ";?>
 
 
 
