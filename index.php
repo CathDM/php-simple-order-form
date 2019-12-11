@@ -15,9 +15,16 @@
     <?php echo "Hello, Echo!"; ?> <br>
     <?php print "Hello print!"; ?><br>
     <?php printf ('Hi, printfunction!'); ?><br>
-    <?php echo "Hi, I am learning php from scratch you mofo!" ?><br>
-    <?php $str = "i will be back by ";?>
-
+    <?php echo "Hi, I am learning php from scratch you mofo!"?><br>
+    <?php 
+    $str = "I will be back by ";
+    $num = 5;   
+        echo $str; echo " ";
+        echo $num;
+    
+    ?>
+   
+   
 
 
 
