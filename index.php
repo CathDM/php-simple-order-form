@@ -76,6 +76,39 @@
     echo $joo;
     echo "<br/>\n";
     echo $joo[3]; //print 3th character from array
+    echo "<br/>\n";
+?>
+<?php
+
+    //////////////////variabel in variabels is a cool trick :-)
+    $foo = "bar";
+    $$foo = "data";  //bar has value data
+    echo "\$foo:\t"; //somth somth happens here
+    echo $foo; //prints bar
+    echo "<br/>\n";
+    ///also
+    echo "\${\$foo}:\t"; //(use of \t => if the string in enclosed with souble " " php will implement the following escape sequence )
+    echo "${$foo}"; //prints data 
+    echo "<br/>\n";
+    echo "\$\$foo:\t";
+    echo $$foo;
+    echo "<br/>\n";
+    echo "\$bar:\t";
+    echo "$bar"; //prints data wish is correct if you would follow the calculated path for the escape sequence
+    //equivuilant examples
+    $fooBar ='baz';
+    $varPrefix = 'foo';
+    echo "\$fooBar:\t\t\t\t";
+    echo $fooBar; //outputs baz due to prefixed variation
+    echo "<br/>\n";
+    //=>  also
+    echo "\${\$varPrefix . 'Bar'}:\t\t";    //varPrefix will give value foo and the dot operator concatenates it with Bar hence making it fooBar. 
+                                            //Putting $ before fooBar makes it a variable variable. 
+    echo "${$varPrefix . 'Bar'}";
+    
+
+
+
 
 ?>
 
